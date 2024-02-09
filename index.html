@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'btn-red': '#FF4240',
+              }
+            }
+          }
+        }
+    </script>
+</head>
+<body>
+    <div class="mainBox bg-gradient-to-r from-[#00feba] to-[#5b548a] w-[400px] mx-auto my-10 p-4 rounded-2xl">
+        <div class="seach-section flex gap-1 justify-center items-center">
+            <!-- search section -->
+            <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+            <div class="seach-btn bg-white w-8 h-8 flex justify-center items-center text-center mx-auto my-4 rounded-full">
+                <img src="images/search.png" alt="" class="h-4 w-4">
+            </div>
+
+
+        </div>
+    </div>
+
+</body>
+</html>
